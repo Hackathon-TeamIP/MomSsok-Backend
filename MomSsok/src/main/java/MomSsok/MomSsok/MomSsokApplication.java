@@ -9,4 +9,5 @@ public class MomSsokApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MomSsokApplication.class, args);
 	}
+
 }
