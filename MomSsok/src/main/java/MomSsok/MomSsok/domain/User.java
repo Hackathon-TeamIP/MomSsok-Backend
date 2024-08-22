@@ -19,9 +19,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    // Other fields and methods...
-
     @OneToMany(mappedBy = "user")
     private Set<Place> places;
+
+
 
 }
