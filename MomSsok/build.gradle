@@ -18,11 +18,14 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 	implementation 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok:1.18.24' // 최신 버전을 사용하세요
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
 	// MySQL connector for java
-	implementation 'mysql:mysql-connector-j'
+	implementation 'com.mysql:mysql-connector-j'
 	// JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
