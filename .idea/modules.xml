@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MomSsok-Backend.iml" filepath="$PROJECT_DIR$/.idea/MomSsok-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MomSsok.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MomSsok.main.iml" />
     </modules>
   </component>
 </project>
