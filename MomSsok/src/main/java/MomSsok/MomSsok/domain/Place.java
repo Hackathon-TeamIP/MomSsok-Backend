@@ -27,7 +27,7 @@ public class Place {
     private String description;
 
     @Column(name = "url", length = 255)
-    private String url;
+    private String url; //ㅇㅇㅇ
 
 
 }
