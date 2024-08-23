@@ -19,9 +19,18 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "username", length = 255)
+    private String username;
+
+    @Column(name = "password", length = 255)
+    private String password;
+
+    @Column(name = "email", length = 255)
+    private String email;
+
+    // Other fields and methods...
+
     @OneToMany(mappedBy = "user")
     private Set<Place> places;
-
-
 
 }
