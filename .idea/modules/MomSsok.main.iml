@@ -6,12 +6,9 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="MomSsok.main" value="a9d9e755-20c2-4b40-a0a5-1629d88a4f07" />
           <factory-entry name="entityManagerFactory" />
         </datasource-mapping>
-        <naming-strategy-map>
-          <unit-entry name="entityManagerFactory" />
-        </naming-strategy-map>
+        <naming-strategy-map />
       </configuration>
     </facet>
   </component>
