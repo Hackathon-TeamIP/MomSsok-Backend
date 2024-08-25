@@ -12,9 +12,6 @@ import lombok.Setter;
 @Table(name = "User")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // INT 타입의 기본 키
-
     @Column(name = "user_id", unique = true, nullable = false)
     private String userId; // VARCHAR(50) 타입
 
