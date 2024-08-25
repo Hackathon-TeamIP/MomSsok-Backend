@@ -28,8 +28,8 @@ public class Place {
     @Column(name = "description", nullable = false)
     private String description; // TEXT 타입
 
-    @Column(name = "image", nullable = false)
-    private String image; // VARCHAR(255) 타입
+    @Column(name = "image_url", nullable = false)
+    private String image_url; // VARCHAR(255) 타입
 
     @Column(name = "tag1")
     private String tag1; // VARCHAR(50) 타입
@@ -45,6 +45,9 @@ public class Place {
 
     @Column(name = "data", nullable = false)
     private String data; // VARCHAR(100) 타입
+
+    @Column(name = "address", nullable = false)
+    private String address; // VARCHAR(100) 타입
 
     @OneToMany(mappedBy = "place")
     private List<Likes> likes;
