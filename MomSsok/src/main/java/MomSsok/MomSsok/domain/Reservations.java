@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Entity
 @Getter
 @Setter
@@ -22,7 +24,7 @@ public class Reservations {
     private User user; // User 테이블의 외래 키
 
     @Column(name = "date", nullable = false)
-    private java.sql.Date date; // DATE 타입
+    private Date date; // DATE 타입
 
     @Column(name = "adult", nullable = false)
     private Integer adult = 0; // INT 타입, 기본값 0
