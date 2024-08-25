@@ -8,6 +8,6 @@ import lombok.*;
 /**
  * 상세페이지
  */
-public class DetailPlaceDto {
+public class PlaceDTO {
 
 }
