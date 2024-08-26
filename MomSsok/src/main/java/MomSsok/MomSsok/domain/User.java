@@ -5,23 +5,20 @@ import jakarta.persistence.Table;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
-import java.util.Set;
 
 @Setter
 @Getter
 @Entity
 @Table(name = "User")
 public class User {
-
-    @jakarta.persistence.Id
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(name = "user_id", unique = true, nullable = false)
+    private String userId; // VARCHAR(50) 타입
 
-    // Other fields and methods...
+    @Column(name = "password", nullable = false)
+    private String password; // VARCHAR(255) 타입
 
-    @OneToMany(mappedBy = "user")
-    private Set<Place> places;
+    @Column(name = "email", unique = true, nullable = false)
+    private String email; // VARCHAR(100) 타입
 
 }
