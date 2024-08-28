@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MomSsok.iml" filepath="$PROJECT_DIR$/.idea/modules/MomSsok.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MomSsok-Backend.iml" filepath="$PROJECT_DIR$/.idea/MomSsok-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MomSsok-Backend.MomSsok.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MomSsok-Backend.MomSsok.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MomSsok-Backend.MomSsok.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MomSsok-Backend.MomSsok.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MomSsok.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MomSsok.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MomSsok.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MomSsok.test.iml" />
     </modules>

@@ -1,6 +1,6 @@
 package MomSsok.MomSsok.controller;
 
-import MomSsok.MomSsok.domain.Place;
+import MomSsok.MomSsok.domain.Space;
 import MomSsok.MomSsok.domain.Review;
 import MomSsok.MomSsok.dto.SearchPlaceDto;
 import MomSsok.MomSsok.service.SearchPlaceService;
@@ -17,7 +17,7 @@ public class SearchPlaceController {
     private SearchPlaceService searchPlaceService;
 
     @GetMapping("/search")
-    public List<Place> searchPlaces(@RequestParam(required = false) String name,
+    public List<Space> searchPlaces(@RequestParam(required = false) String name,
                                     @RequestParam(required = false) String description,
                                     @RequestParam(required = false) String tag1,
                                     @RequestParam(required = false) String tag2) {

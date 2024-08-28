@@ -1,14 +1,15 @@
 package MomSsok.MomSsok.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
+@Getter
 public class InfoDto {
     private String address;
-    private int phone;
-    private String date;
+    private String contact;
+    private String operationDays;
+
 }

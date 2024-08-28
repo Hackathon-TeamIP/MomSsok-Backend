@@ -2,12 +2,10 @@ package MomSsok.MomSsok.controller;
 
 
 
-import MomSsok.MomSsok.dto.PlaceDto;
-import MomSsok.MomSsok.service.PlaceService;
+import MomSsok.MomSsok.dto.SpaceDto;
+import MomSsok.MomSsok.service.SpaceService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,14 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/places")
-public class PlaceController {
+@RequestMapping("/api/space")
+public class SpaceController {
 
-    private final PlaceService placeService;
+    private final SpaceService spaceService;
 
     @GetMapping("/{id}") // 경로 수정
-    public PlaceDto getPlace(@PathVariable Long id) {
-        return placeService.getPlaceDetails(id);
+    public SpaceDto getPlace(@PathVariable Long id) {
+        return spaceService.getSpaceDetail(id);
     }
     
 

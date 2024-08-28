@@ -1,6 +1,6 @@
 package MomSsok.MomSsok.service;
 
-import MomSsok.MomSsok.domain.Place;
+import MomSsok.MomSsok.domain.Space;
 import MomSsok.MomSsok.domain.Review;
 import MomSsok.MomSsok.dto.SearchPlaceDto;
 import MomSsok.MomSsok.repository.SearchPlaceRepository;
@@ -21,7 +21,7 @@ public class SearchPlaceService {
 
 
 
-    public List<Place> searchPlaces(SearchPlaceDto searchDto) {
+    public List<Space> searchPlaces(SearchPlaceDto searchDto) {
         String name = searchDto.getName();
         String description = searchDto.getDescription();
         String tag1 = searchDto.getTag1();
